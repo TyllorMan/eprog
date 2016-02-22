@@ -6,7 +6,7 @@ $dbconn = pg_connect("host=localhost dbname=bdweb user=bdweb password=bdweb2016"
 // Performing SQL query
 $query = 'SELECT * FROM usuario';
 $result = pg_query($query) or die('Query failed: ' . pg_last_error());
-Tabela de usuarios</br>
+echo "Tabela de usuarios</br>";
 // Printing results in HTML
 echo "<table>\n";
 while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
