@@ -1,3 +1,4 @@
+<p>Exemplo de recuperacao de dados</p>
 <?php
 // Connecting, selecting database
 $dbconn = pg_connect("host=localhost dbname=bdweb user=bdweb password=bdweb2016")
